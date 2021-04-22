@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import SearchForm from '../../components/SearchForm';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <h1>영화 검색 사이트</h1>
+      <Link to="/">영화 검색 사이트</Link>
+      <SearchForm />
       {children}
     </>
   );
