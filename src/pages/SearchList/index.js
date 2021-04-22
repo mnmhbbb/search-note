@@ -1,14 +1,13 @@
 import React from 'react';
-import { useParams } from 'react-router';
 import Layout from '../../layouts/Layout';
 
 const SearchList = (props) => {
-  console.log(props);
-  const { keyword } = useParams();
+  let urlSearchParams = new URLSearchParams(props.location.search.slice(1));
+  const searchWord = urlSearchParams.get('q');
   return (
     <>
       <Layout>
-        <h1>{keyword}에 대한 검색 결과</h1>
+        <h1>'{searchWord}'에 대한 검색 결과</h1>
       </Layout>
     </>
   );
