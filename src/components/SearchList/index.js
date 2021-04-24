@@ -1,8 +1,7 @@
 import React from 'react';
 import Layout from '../../layouts/Layout';
 
-const SearchList = (props) => {
-  console.log(props);
+const SearchList = () => {
   return (
     <>
       <Layout>

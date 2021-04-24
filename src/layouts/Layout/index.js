@@ -5,7 +5,7 @@ import SearchForm from '../../components/SearchForm';
 const Layout = ({ children }) => {
   return (
     <>
-      <Link to="/">영화 검색 사이트</Link>
+      <Link to="/">책책책! 책을 읽읍시다</Link>
       <SearchForm />
       {children}
     </>
